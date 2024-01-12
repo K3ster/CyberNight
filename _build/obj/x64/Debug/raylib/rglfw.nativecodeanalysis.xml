@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\raylib-master\src\external\glfw\src\</FILEPATH>
+      <FILENAME>win32_thread.c</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>28125</DEFECTCODE>
+    <DESCRIPTION>Funkcja „InitializeCriticalSection” musi być wywoływana z wnętrza bloku try/except. Wymóg może być warunkowy.</DESCRIPTION>
+    <FUNCTION>_glfwPlatformCreateMutex</FUNCTION>
+    <DECORATED>_glfwPlatformCreateMutex</DECORATED>
+    <FUNCLINE>73</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

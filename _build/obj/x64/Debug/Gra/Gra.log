@@ -1,0 +1,66 @@
+﻿  raylib_game.cpp
+D:\Users\micha\Desktop\gra\Gra\raylib-master\src\raygui.h(2654,46): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „../game/src/raylib_game.cpp”)
+  
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(211,9): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(212,37): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(213,43): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(214,38): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(228,17): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(306,41): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(306,41): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(306,73): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(306,73): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(306,93): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(306,93): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(307,119): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(307,119): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(307,140): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(307,140): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(308,49): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(308,49): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(308,87): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(308,87): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(308,110): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(308,110): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(309,138): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(309,138): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(309,162): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(309,162): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(310,49): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(310,49): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(310,99): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(310,99): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(310,128): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(310,128): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(311,170): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(311,170): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(311,200): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(311,200): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(312,52): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(312,52): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(312,90): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(312,90): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(312,113): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(312,113): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(313,143): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(313,143): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(313,167): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(313,167): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(314,42): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(314,42): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(315,49): warning C4838: konwersja z „int” do „float” wymaga konwersji zawężającej
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(315,49): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(464,49): warning C4244: "+=": konwersja z "double" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(466,28): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(474,49): warning C4244: "-=": konwersja z "double" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(475,28): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(494,28): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(502,28): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(554,49): warning C4244: "+=": konwersja z "double" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(555,28): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(563,49): warning C4244: "-=": konwersja z "double" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(564,28): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(644,19): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+D:\Users\micha\Desktop\gra\Gra\game\src\raylib_game.cpp(646,28): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+  Gra.vcxproj -> D:\Users\micha\Desktop\gra\Gra\_bin\Debug\Gra.exe

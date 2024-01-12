@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\game\src\</FILEPATH>
+      <FILENAME>raylib_game.cpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Pocisk::wielkosc” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Pocisk::{ctor}</FUNCTION>
+    <DECORATED>??0Pocisk@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Pocisk::wielkosc</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\game\src\</FILEPATH>
+      <FILENAME>raylib_game.cpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Pocisk::szybkosc” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Pocisk::{ctor}</FUNCTION>
+    <DECORATED>??0Pocisk@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Pocisk::szybkosc</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\game\src\</FILEPATH>
+      <FILENAME>raylib_game.cpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Pocisk::aktywny” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Pocisk::{ctor}</FUNCTION>
+    <DECORATED>??0Pocisk@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Pocisk::aktywny</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\game\src\</FILEPATH>
+      <FILENAME>raylib_game.cpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Pocisk::pozycja” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Pocisk::{ctor}</FUNCTION>
+    <DECORATED>??0Pocisk@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Pocisk::pozycja</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

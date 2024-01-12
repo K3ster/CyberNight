@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\_build\</FILEPATH>
+      <FILENAME>Gracz.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Gracz::pozycja” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Gracz::{ctor}</FUNCTION>
+    <DECORATED>??0Gracz@@QEAA@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Gracz::pozycja</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\_build\</FILEPATH>
+      <FILENAME>Gracz.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Gracz::tekstura” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Gracz::{ctor}</FUNCTION>
+    <DECORATED>??0Gracz@@QEAA@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Gracz::tekstura</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\_build\</FILEPATH>
+      <FILENAME>Gracz.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Gracz::MozeSkakac” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Gracz::{ctor}</FUNCTION>
+    <DECORATED>??0Gracz@@QEAA@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Gracz::MozeSkakac</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\_build\</FILEPATH>
+      <FILENAME>Gracz.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Gracz::szybkosc” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Gracz::{ctor}</FUNCTION>
+    <DECORATED>??0Gracz@@QEAA@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Gracz::szybkosc</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\_build\</FILEPATH>
+      <FILENAME>Gracz.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Gracz::frameWidth” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Gracz::{ctor}</FUNCTION>
+    <DECORATED>??0Gracz@@QEAA@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Gracz::frameWidth</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\_build\</FILEPATH>
+      <FILENAME>Gracz.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Gracz::frameHeight” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Gracz::{ctor}</FUNCTION>
+    <DECORATED>??0Gracz@@QEAA@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Gracz::frameHeight</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

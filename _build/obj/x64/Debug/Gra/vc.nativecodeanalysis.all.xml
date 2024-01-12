@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\game\src\</FILEPATH>
+      <FILENAME>raylib_game.cpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Pocisk::wielkosc” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Pocisk::{ctor}</FUNCTION>
+    <DECORATED>??0Pocisk@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Pocisk::wielkosc</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Users\micha\Desktop\gra\Gra\_build\</FILEPATH>
+      <FILENAME>Gracz.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Gracz::pozycja” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Gracz::{ctor}</FUNCTION>
+    <DECORATED>??0Gracz@@QEAA@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Gracz::pozycja</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

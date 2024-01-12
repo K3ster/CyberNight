@@ -1,0 +1,4058 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Przepełnienie buforu podczas zapisywania do elementu „RLGL.State.stack”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                },
+                "region": {
+                  "startLine": 1135,
+                  "startColumn": 5,
+                  "endLine": 1135,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rlPushMatrix",
+                  "decoratedName": "rlPushMatrix",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 1127,
+                            "startColumn": 33
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tego rozgałęzienia (przyjmowane jest: „RLGL.State.stackCounter>=32”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 1127,
+                            "startColumn": 62
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 1129,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "Pomiń to rozgałęzienie (przyjmowane jest, że element „<warunek rozgałęzienia>” ma wartość false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 1135,
+                            "startColumn": 47
+                          }
+                        },
+                        "message": {
+                          "text": "Nieprawidłowy zapis w elemencie „RLGL.State.stack[32]” (zapisywalny zakres od 0 do 31)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Używanie niezainicjowanej pamięci „*batch.vertexBuffer.vertices”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                },
+                "region": {
+                  "startLine": 2709,
+                  "startColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rlUnloadRenderBatch",
+                  "decoratedName": "rlUnloadRenderBatch",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2682,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2683,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2711,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2712,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Nie zainicjowano elementu „*batch.vertexBuffer.vertices”"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Element „*batch.vertexBuffer.vertices” jest używany, ale mógł nie zostać zainicjowany"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Używanie niezainicjowanej pamięci „*batch.vertexBuffer.texcoords”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                },
+                "region": {
+                  "startLine": 2710,
+                  "startColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rlUnloadRenderBatch",
+                  "decoratedName": "rlUnloadRenderBatch",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2682,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2683,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2711,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2712,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Nie zainicjowano elementu „*batch.vertexBuffer.texcoords”"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Element „*batch.vertexBuffer.texcoords” jest używany, ale mógł nie zostać zainicjowany"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Używanie niezainicjowanej pamięci „*batch.vertexBuffer.colors”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                },
+                "region": {
+                  "startLine": 2711,
+                  "startColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rlUnloadRenderBatch",
+                  "decoratedName": "rlUnloadRenderBatch",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2682,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2683,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2711,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2712,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2711,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Nie zainicjowano elementu „*batch.vertexBuffer.colors”"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2711,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Element „*batch.vertexBuffer.colors” jest używany, ale mógł nie zostać zainicjowany"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Używanie niezainicjowanej pamięci „*batch.vertexBuffer.indices”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                },
+                "region": {
+                  "startLine": 2712,
+                  "startColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rlUnloadRenderBatch",
+                  "decoratedName": "rlUnloadRenderBatch",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2682,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2683,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2711,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2712,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2686,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2689,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2700,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2701,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2702,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2703,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2706,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2709,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2710,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2711,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2712,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Nie zainicjowano elementu „*batch.vertexBuffer.indices”"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 2712,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Element „*batch.vertexBuffer.indices” jest używany, ale mógł nie zostać zainicjowany"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Wyłuskanie wskaźnika NULL „imgData”. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                },
+                "region": {
+                  "startLine": 3461,
+                  "startColumn": 13,
+                  "endLine": 3461,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rlReadScreenPixels",
+                  "decoratedName": "rlReadScreenPixels",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3448,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3452,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3455,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Element „imgData” może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3457,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3457,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „y>=0”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3459,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3459,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „x<((width*4))”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3461,
+                            "startColumn": 53
+                          }
+                        },
+                        "message": {
+                          "text": "Element „imgData” jest wyłuskiwany, ale nadal może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Wyłuskanie wskaźnika NULL „screenData”. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                },
+                "region": {
+                  "startLine": 3461,
+                  "startColumn": 13,
+                  "endLine": 3461,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rlReadScreenPixels",
+                  "decoratedName": "rlReadScreenPixels",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3448,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Element „screenData” może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3452,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3455,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3457,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3457,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „y>=0”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3459,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3459,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „x<((width*4))”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+                          },
+                          "region": {
+                            "startLine": 3461,
+                            "startColumn": 53
+                          }
+                        },
+                        "message": {
+                          "text": "Element „screenData” jest wyłuskiwany, ale nadal może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "Funkcja używa bajtów stosu „66568”. Rozważ przeniesienie niektórych danych do sterty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/msf_gif.h"
+                },
+                "region": {
+                  "startLine": 398,
+                  "startColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "msf_compress_frame",
+                  "decoratedName": "msf_compress_frame",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "Funkcja używa bajtów stosu „65608”. Rozważ przeniesienie niektórych danych do sterty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/msf_gif.h"
+                },
+                "region": {
+                  "startLine": 589,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "msf_gif_frame",
+                  "decoratedName": "msf_gif_frame",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Odczytywanie nieprawidłowych danych z elementu „cnts”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                },
+                "region": {
+                  "startLine": 294,
+                  "startColumn": 3,
+                  "endLine": 294,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sdefl_sort_sym",
+                  "decoratedName": "sdefl_sort_sym",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 276,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "Element „cnts” jest tablicą, liczba elementów: 288 (bajty: 1152)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 277,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "Pomiń tę pętlę (przyjmowane jest, że element „sym<sym_cnt” ma wartość false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 282,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 282,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Pomiń tę pętlę (przyjmowane jest, że element „i<cnt_num” ma wartość false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 287,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 287,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "Pomiń tę pętlę (przyjmowane jest, że element „sym<sym_cnt” ma wartość false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+                          },
+                          "region": {
+                            "startLine": 294,
+                            "startColumn": 3
+                          }
+                        },
+                        "message": {
+                          "text": "Nieprawidłowy odczyt z elementu „cnts[-1]” (czytelny zakres od 0 do 287)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Wyłuskanie wskaźnika NULL „sequence”. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                },
+                "region": {
+                  "startLine": 217,
+                  "startColumn": 13,
+                  "endLine": 217,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "rprand_load_sequence",
+                  "decoratedName": "rprand_load_sequence",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 187,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 189,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 196,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Element „sequence” może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 198,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 199,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 201,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 201,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „i<count”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 203,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 204,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 206,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 206,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Pomiń tę pętlę (przyjmowane jest, że element „j<i” ma wartość false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 215,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tego rozgałęzienia (przyjmowane jest: „!value_is_dup”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+                          },
+                          "region": {
+                            "startLine": 217,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "Element „sequence” jest wyłuskiwany, ale nadal może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Wyłuskanie wskaźnika NULL „icons”. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                },
+                "region": {
+                  "startLine": 579,
+                  "startColumn": 17,
+                  "endLine": 579,
+                  "endColumn": 48
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SetWindowIcons",
+                  "decoratedName": "SetWindowIcons",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 565,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 572,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 573,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Element „icons” może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 575,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 575,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „i<count”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 577,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tego rozgałęzienia (przyjmowane jest: „<warunek rozgałęzienia>”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 579,
+                            "startColumn": 36
+                          }
+                        },
+                        "message": {
+                          "text": "Element „icons” jest wyłuskiwany, ale nadal może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "Element „cmd” może być elementem „0”: jest to niespójne ze specyfikacją funkcji „sprintf”. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                },
+                "region": {
+                  "startLine": 1051,
+                  "startColumn": 9,
+                  "endLine": 1051,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenURL",
+                  "decoratedName": "OpenURL",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1046,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1049,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Element „cmd” może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1051,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Element „cmd” jest wejściem dla elementu „sprintf” (deklaracja pod adresem c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h:1764)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1051,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Element „cmd” nie może być elementem NULL, ponieważ jest to niespójne z adnotacją SAL dotyczącą elementu „sprintf”"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "Element „CORE.Window.dropFilepaths[i]” może być elementem „0”: jest to niespójne ze specyfikacją funkcji „strcpy”. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                },
+                "region": {
+                  "startLine": 1686,
+                  "startColumn": 13,
+                  "endLine": 1686,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WindowDropCallback",
+                  "decoratedName": "WindowDropCallback",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1666,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1669,
+                            "startColumn": 39
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1680,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1681,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1683,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Element „i” ma wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1683,
+                            "startColumn": 36
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „i<CORE.Window.dropFileCount”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1685,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1686,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Element „i” jest argumentem We/Wy dla elementu „strcpy” (deklaracja pod adresem c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\string.h:130)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+                          },
+                          "region": {
+                            "startLine": 1686,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Element „CORE.Window.dropFilepaths[i]” nie może być elementem NULL, ponieważ jest to niespójne z adnotacją SAL dotyczącą elementu „strcpy”"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6053",
+          "message": {
+            "text": "Wcześniejsze wywołanie elementu „strncpy” może nie zakończyć zerem ciągu „fileExtLower”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                },
+                "region": {
+                  "startLine": 1841,
+                  "startColumn": 17,
+                  "endLine": 1841,
+                  "endColumn": 68
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "IsFileExtension",
+                  "decoratedName": "IsFileExtension",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1827,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1828,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1830,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1833,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1834,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1836,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1837,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Element „fileExtLower” jest wyjściem z elementu „strncpy”, gdzie może nie nastąpić zakończenie zerem"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1839,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1839,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „i<extCount”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1841,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Element „fileExtLower” jest wejściem dla elementu „strcmp” (deklaracja pod adresem c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\string.h:100)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 1841,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Element „fileExtLower” musi być zakończony zerem według adnotacji SAL w elemencie „strcmp”"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Przepełnienie buforu podczas zapisywania do elementu „encodedData”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                },
+                "region": {
+                  "startLine": 2323,
+                  "startColumn": 9,
+                  "endLine": 2323,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EncodeDataBase64",
+                  "decoratedName": "EncodeDataBase64",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2300,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2306,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2308,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2310,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2312,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "Element „encodedData” może mieć wartość NULL (Pomiń to rozgałęzienie)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2314,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2314,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2314,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „i<dataSize”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2316,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2317,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2318,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2320,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2322,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2323,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Element „j” może mieć wartość równą 6"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2323,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Nieprawidłowy zapis w elemencie „encodedData” (poza zapisywalnym zakresem)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Wyłuskanie wskaźnika NULL „decodedData”. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                },
+                "region": {
+                  "startLine": 2365,
+                  "startColumn": 9,
+                  "endLine": 2365,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DecodeDataBase64",
+                  "decoratedName": "DecodeDataBase64",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2336,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2344,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2345,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2345,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2347,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2352,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2345,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2345,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2356,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Element „decodedData” może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2358,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2358,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "Wejdź do tej pętli (przyjmowane jest: „i<outSize/3”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2360,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2361,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2362,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2363,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                          },
+                          "region": {
+                            "startLine": 2365,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Element „decodedData” jest wyłuskiwany, ale nadal może mieć wartość NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Ignorowana wartość zwrotna: „sscanf”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                },
+                "region": {
+                  "startLine": 2444,
+                  "startColumn": 31,
+                  "endLine": 2444,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LoadAutomationEventList",
+                  "decoratedName": "LoadAutomationEventList",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Ignorowana wartość zwrotna: „sscanf”."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+                },
+                "region": {
+                  "startLine": 2447,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LoadAutomationEventList",
+                  "decoratedName": "LoadAutomationEventList",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33130.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rlgl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "36baa2900909ec84175b6d34acb9d7ce71faf2eadf892179c5f45e0091ce3834"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/msf_gif.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "bcf1fe3591fb9ea0e375c448dcc02fa4471fe3b143f7bab9ac0847afcf6807d0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/sdefl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "089a9a9e119e54ec02a6e87d904cb0c707fbfb2a6ecca3506ce80bc9e755c241"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/external/rprand.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "199f6a85a61bd4fdce0e219bf20575910809960487f6deb9d2593ed4e35959be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/platforms/rcore_desktop.c"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "17be1ded00e6326963a6da6735ef788e2fe9faa1220cd107eea431066cc7000a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/raylib-master/src/rcore.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1a3005fb22f853a3d94fa812f8f073ed0fe5904836dd1570a64b16d39fcd54c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/raylib.h"
+          },
+          "hashes": {
+            "sha-256": "e3f57801c478c4d3f2ba7083e914ff03bac2881aadbafe6ad17292c1092dc23c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/config.h"
+          },
+          "hashes": {
+            "sha-256": "e6ee253094b08bcf945721694b22156f6e18f8d9ff847b56a4ef3e7204f5d81f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/utils.h"
+          },
+          "hashes": {
+            "sha-256": "988a48b8de2d973e475c79fd7232e533404eeb4241e74a24ec60110938660e60"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/external/glad.h"
+          },
+          "hashes": {
+            "sha-256": "220b47282d4aee2c9cd2cba21943c29c0684f1bd489ff66d36d7ea1d2e9418c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/raymath.h"
+          },
+          "hashes": {
+            "sha-256": "2d9db954b9ee5cfb827c0a39d6e134ee575a7b9e0670f6b70b774b7138b8b5ac"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/rgestures.h"
+          },
+          "hashes": {
+            "sha-256": "bd78d3ac96421659607d9f2ca0a05b8418130155893218b342b277d39e6093d8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/rcamera.h"
+          },
+          "hashes": {
+            "sha-256": "f4e3621c493d45caba177ce8c91a0061d81f829f91e6aef5c076a9130e60be5b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/external/sinfl.h"
+          },
+          "hashes": {
+            "sha-256": "2dc698a9e7489d9f4b7c80cc2ebc616af45a756ba8b0efa1d78ece4f54b6c628"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/external/dirent.h"
+          },
+          "hashes": {
+            "sha-256": "0fdc24e938e17e7c6b905e1566731f2f76d133245e740edf6b39518deefb257e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/external/glfw/include/glfw/glfw3.h"
+          },
+          "hashes": {
+            "sha-256": "86f666424a2a6666114a418bce31f0151a5f12cff314d82d311d669cb3f57fba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/external/glfw/include/glfw/glfw3native.h"
+          },
+          "hashes": {
+            "sha-256": "b3b9f35d807b4f1aa386045bf51365ea07159d05a8c76b08e6e6c210a7ea7b48"
+          }
+        }
+      ]
+    }
+  ]
+}

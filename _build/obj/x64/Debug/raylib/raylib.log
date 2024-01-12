@@ -1,0 +1,18 @@
+﻿  raudio.c
+  rcore.c
+D:\Users\micha\Desktop\gra\Gra\raylib-master\src\external\jar_xm.h(242,1): warning C4005: "DEBUG": ponowna definicja makra
+  (kompilowanie pliku źródłowego „../raylib-master/src/raudio.c”)
+  D:\Users\micha\Desktop\gra\Gra\raylib-master\src\external\jar_xm.h(242,1):
+  Element „DEBUG“ został wcześniej zadeklarowany w wierszu polecenia
+  
+D:\Users\micha\Desktop\gra\Gra\raylib-master\src\external\rprand.h(206,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  (kompilowanie pliku źródłowego „../raylib-master/src/rcore.c”)
+  
+  rglfw.c
+  rmodels.c
+  rshapes.c
+  rtext.c
+  rtextures.c
+  utils.c
+  Generowanie kodu...
+  raylib.vcxproj -> D:\Users\micha\Desktop\gra\Gra\_bin\Debug\raylib.lib

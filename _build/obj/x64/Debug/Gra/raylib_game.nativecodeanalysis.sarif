@@ -1,0 +1,201 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Zmienna „Pocisk::wielkosc” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/game/src/raylib_game.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pocisk::{ctor}",
+                  "decoratedName": "??0Pocisk@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Pocisk::wielkosc"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Zmienna „Pocisk::szybkosc” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/game/src/raylib_game.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pocisk::{ctor}",
+                  "decoratedName": "??0Pocisk@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Pocisk::szybkosc"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Zmienna „Pocisk::aktywny” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/game/src/raylib_game.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pocisk::{ctor}",
+                  "decoratedName": "??0Pocisk@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Pocisk::aktywny"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Zmienna „Pocisk::pozycja” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Users/micha/Desktop/gra/Gra/game/src/raylib_game.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pocisk::{ctor}",
+                  "decoratedName": "??0Pocisk@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Pocisk::pozycja"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33130.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Users/micha/Desktop/gra/Gra/game/src/raylib_game.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "5b08fda9ce7e4602bd502d5ea1e2883e09104c583ed27bc346e28afad73dead7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/raylib.h"
+          },
+          "hashes": {
+            "sha-256": "e3f57801c478c4d3f2ba7083e914ff03bac2881aadbafe6ad17292c1092dc23c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/raylib-master/src/raymath.h"
+          },
+          "hashes": {
+            "sha-256": "2d9db954b9ee5cfb827c0a39d6e134ee575a7b9e0670f6b70b774b7138b8b5ac"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/_build/gracz.h"
+          },
+          "hashes": {
+            "sha-256": "3f9b7b58e9eb573b6b0f16ddfb3f4d992c79cff78949b7ae2f5e034faf8154b9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/_build/jedzenie.h"
+          },
+          "hashes": {
+            "sha-256": "0c83142393c935ec29bd0937df1a2615b035e563e056818f436f804f97b2691b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/_build/bloczki.h"
+          },
+          "hashes": {
+            "sha-256": "9db5a195717bb18eef541dd6de12c7a8f74ee60a361b53b1068bc6233928a13a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/users/micha/desktop/gra/gra/_build/camera.h"
+          },
+          "hashes": {
+            "sha-256": "b769e229e4cf0d637204f93a4660531e5ba8db2a7c604c75c7d7f181195756f1"
+          }
+        }
+      ]
+    }
+  ]
+}
