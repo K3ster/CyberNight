@@ -1,7 +1,3 @@
-Oto propozycja pliku README dla Twojego repozytorium [CyberNight](https://github.com/K3ster/CyberNight):
-
-```markdown
-# CyberNight
 
 **CyberNight** to prosta gra platformowa stworzona jako projekt na zajęcia z C++ podczas studiów. Gra została zbudowana z wykorzystaniem frameworka [raylib](https://www.raylib.com/).
 
